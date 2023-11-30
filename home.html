@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="school.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="skul">
+        <!-- HEADER -->
+        <div class="head">
+            <img src="img/paris.jpg" width="100px" class="logo" height="100px" alt="car">
+            <div class="float">
+                <h2 class="heading">My Dreams College Enugu</h2>
+                <p class="motto">Where your childrens dreams come true.</p>
+
+                <h4 class="title">INFORMATION BLOG</h4>
+            </div>
+            
+
+        </div>
+        <!-- <nav class="nav">
+            <ul>
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li>
+                    <a href="blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+            </ul>
+        </nav> -->
+
+        <div style="display: flex;">
+            <aside class="info">
+                <h2 class="heading3">IMPORTANT INFO. </h2>
+                <P class="cont-p2">
+                    Resumption date bfor 2023/2024 academic section will be on the 12th of september 2023.
+                    Please endeavor that your child is at school that very day to avoid unneccessary Lorem ipsum 
+                    dolor sit amet consectetur adipisicing elit. Repudiandae possimus debitis 
+                    ipsam quasi atque facilis reprehenderit eum dicta dolorum quaerat. 
+                </P>
+                <p>
+                    {% for post in post %}
+                    <div>
+                        <h2>{{ post.id }}</h2>
+                        <a href="{{ url_for('post_detail', post_id=post.id) }}">{{ post.title }}</a>
+                        <p>{{ post.content | safe }}</p>
+                        <img width="300px" height="300px" src="{{ post.post_img }}" alt="">
+                        <h4>post by {{ post.author.username }} on {{ post.date_posted }}</h4>
+                    </div>
+                    {% endfor %}
+                </p>
+            </aside>
+    
+            <!-- ABOUT -->
+            <div class="force">
+                <div class="about">
+                    <div class="content">
+                        <p class="cont-p">
+                            <strong>My dreams college</strong> is a Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Odit atque nesciunt harum ratione totam labore! Perferendis earum dolore quam aspernatur animi 
+                        repudiandae explicabo tempore soluta saepe deserunt impedit, minima id. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aperiam debitis voluptatum quia 
+                        earum consequuntur vitae temporibus, mollitia repellendus quasi dolores, 
+                        minima provident nam blanditiis nihil obcaecati quam sed unde.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/item-01.jpg" alt="item-01" class="force-img">
+
+                 <!-- Addmission -->
+    
+                <div class="status">
+                    <div class="image"></div>
+                    <h2 class="heading2">Addmission status</h2>
+                    <p class="cont-p1">
+                        Addmission into our school and registration of forms have begun and will continue until the end of 
+                        the month nof October. If there will be any thing to be considered during registration please make sure to notify those incharge 
+                        of it or call: <strong>+234-9161373459</strong> for more details.  
+                    </p>
+                </div> 
+            </div>
+           
+    
+           
+        </div>
+
+       
+
+        
+
+        <footer>
+            <p class="foot-p">
+                @copyright 2023 <br>
+                Powered by <a href="#">UKAN</a><br>
+                Contact us: 09161373459 or 08163612125 <br>
+                Email: mydreamscollegeenugu@gmail.com 
+            </p>
+        </footer>
+
+        
+    </div>
+</body>
+</html>

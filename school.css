@@ -1,0 +1,131 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+    line-height: 20px;
+}
+
+/* heading */
+.head{
+    background-color: tomato;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    display: flex;
+}
+.logo{
+    border-radius: 5px;
+}
+.float{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.heading{
+    font-size: 35px;
+}
+.motto{
+    margin-top: 10px;
+}
+.title{
+    float:right;
+    margin-left: 700px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+}
+.title:hover{
+    background-color: #d3d3d3;
+    color: #000;
+    cursor:context-menu;
+}
+
+/* about */
+.force{
+    width:70%;
+    height:100%;
+    /* background-color: grey; */
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 20px 20px 20px 20px;
+}
+.force-img{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+.about{
+    width: 100%;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url(img/cars2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.content{
+    /* background-color: rgba(228, 235, 208, 0.2); */
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+    padding-top: 250px;
+}
+.cont-p{
+    margin-left: 20px;
+    color: gold;
+}
+
+/* addmission */
+
+.status{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    /* margin-left: 420px; */
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color: white;
+}
+.image{
+    width: 100%;
+    height: 400px;
+    background-image: url(img/cars3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading2{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.cont-p1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* aside */
+
+aside{
+    width: 25%;
+    height: 100%;
+    margin-top: 20px;
+    background-color: #808080;
+    margin-left:20px;
+    color: white;
+    padding: 8px 16px 8px 16px;
+}
+
+/* footer */
+
+footer{
+    background-color: lightgrey;
+    margin-top: 30px;
+    padding: 20px 22px 20px 22px;
+}
+
